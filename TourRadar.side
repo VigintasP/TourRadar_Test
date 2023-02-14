@@ -1,0 +1,984 @@
+{
+  "id": "659a0f3b-2143-4b53-80b4-cae2c24f69e3",
+  "version": "2.0",
+  "name": "TourRadar",
+  "url": "https://www.tourradar.com",
+  "tests": [{
+    "id": "0101082d-9a49-43ae-a7df-3128128ca4b0",
+    "name": "Search",
+    "commands": [{
+      "id": "d5adf1a8-fdc6-4cb9-9327-39980116c921",
+      "comment": "",
+      "command": "open",
+      "target": "/d/europe",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c667b189-cd5d-4534-b465-46f9ac02926f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1792x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "877a2ade-eed4-48d2-a9b0-e1059a316ff2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Danube cruise",
+      "targets": [
+        ["linkText=Danube cruise", "linkText"],
+        ["css=.ao-serp-hero__description > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Danube cruise')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/v/river-danube')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Danube cruise')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd68e1ae-29e8-4487-9289-62e653f8abd4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autocomplete-field",
+      "targets": [
+        ["css=.autocomplete-field", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c189b95-6b86-4e0f-8301-39c78dd023e6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.autocomplete-field",
+      "targets": [
+        ["css=.autocomplete-field", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "austria"
+    }, {
+      "id": "5a8bc634-76bf-4ec7-bd87-9187a9ab9949",
+      "comment": "",
+      "command": "click",
+      "target": "css=.autocomplete-group:nth-child(1) .autocomplete-item:nth-child(1)",
+      "targets": [
+        ["css=.autocomplete-group:nth-child(1) .autocomplete-item:nth-child(1)", "css:finder"],
+        ["xpath=//li/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30be4359-4993-40ff-9b04-2ae3458544fe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.tour:nth-child(1) .star:nth-child(3)",
+      "targets": [
+        ["css=.tour:nth-child(1) .star:nth-child(3)", "css:finder"],
+        ["xpath=//a/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bd0757a-c815-46ef-838c-d22f0b3105b7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,62)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c794dc00-8be5-4635-b1b5-8ffe57f055b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-serp-filters-show-more__button",
+      "targets": [
+        ["css=.js-serp-filters-show-more__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Show more')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "389a67c3-0ea8-412e-b06e-0cb95bf5270c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(1) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(1) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li/a/label", "xpath:idRelative"],
+        ["xpath=//a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'February 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d1b6a99-2670-43d5-988c-cd9a7b893ea2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(3) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(3) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[3]/a/label", "xpath:idRelative"],
+        ["xpath=//li[3]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'April 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "034fbf9b-3b19-420e-b8e5-1ddb3b6b9295",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(5) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(5) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[5]/a/label", "xpath:idRelative"],
+        ["xpath=//li[5]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'June 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cf5000d-6b72-4eb6-97d6-06ae502d7697",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(5) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(5) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[5]/a/label", "xpath:idRelative"],
+        ["xpath=//li[5]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'June 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27b7763f-c9c6-45ff-8ea7-3a1fe6aff7e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(7) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(7) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[7]/a/label", "xpath:idRelative"],
+        ["xpath=//li[7]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'August 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "082cdb01-3997-4a76-8d63-da345548313f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(1) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(1) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li/a/label", "xpath:idRelative"],
+        ["xpath=//a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'February 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a50a0a73-d6ef-4c92-9f73-020170205e72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(2) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(2) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[2]/a/label", "xpath:idRelative"],
+        ["xpath=//li[2]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'March 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f17f1121-449e-4d13-a00b-7bf59806d695",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(2) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(2) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[2]/a/label", "xpath:idRelative"],
+        ["xpath=//li[2]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'March 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee0cc5b-4d82-4462-8c73-ee71ebf01c64",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(2) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(2) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[2]/a/label", "xpath:idRelative"],
+        ["xpath=//li[2]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'March 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "581e0e0e-0c37-4208-ab8a-87e04f509135",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(3) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(3) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[3]/a/label", "xpath:idRelative"],
+        ["xpath=//li[3]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'April 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ec4d77f-ddcd-47c7-bbdd-5e729622ef5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(5) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(5) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[5]/a/label", "xpath:idRelative"],
+        ["xpath=//li[5]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'June 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62d16621-1679-4176-9b41-aa925d439c3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(14) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(14) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[14]/a/label", "xpath:idRelative"],
+        ["xpath=//li[14]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'March 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69f3e619-14fa-49a8-9175-f3022b4c8229",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(14) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(14) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[14]/a/label", "xpath:idRelative"],
+        ["xpath=//li[14]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'March 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2604a59-6538-4c83-8cb6-1767ad35b798",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(14) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(14) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[14]/a/label", "xpath:idRelative"],
+        ["xpath=//li[14]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'March 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef732999-2235-4d42-85d8-e77c290e30bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(12) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(12) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[12]/a/label", "xpath:idRelative"],
+        ["xpath=//li[12]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'January 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4e6fb59-66e1-49cd-bf34-88cbe87f5fdf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(12) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(12) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[12]/a/label", "xpath:idRelative"],
+        ["xpath=//li[12]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'January 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4ebac43-673d-4a18-b68e-b83f1d72ecb6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(12) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(12) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[12]/a/label", "xpath:idRelative"],
+        ["xpath=//li[12]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'January 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01638051-440b-4cf2-b83c-0da88156ca8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(9) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(9) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[9]/a/label", "xpath:idRelative"],
+        ["xpath=//li[9]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'October 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8753e5d-105e-4894-a8d6-b171217b50e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(10) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(10) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[10]/a/label", "xpath:idRelative"],
+        ["xpath=//li[10]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'November 2023')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "730dd2d6-262c-439d-95e2-3b215106c845",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(20) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(20) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[20]/a/label", "xpath:idRelative"],
+        ["xpath=//li[20]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'September 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff80b13a-aeec-4782-92ef-a4aac1205703",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1136)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec9935b8-6628-4fca-bff4-7d316a11f599",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(17) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(17) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[17]/a/label", "xpath:idRelative"],
+        ["xpath=//li[17]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'June 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47bb5685-64e5-4001-b16b-c514fe0f775d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(16) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(16) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[16]/a/label", "xpath:idRelative"],
+        ["xpath=//li[16]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'May 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "772b45b6-6966-44d2-b6c2-37841055f18c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(23) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(23) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[23]/a/label", "xpath:idRelative"],
+        ["xpath=//li[23]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'December 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28d568d6-9e21-4a74-a7d3-3d25a7618aeb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(22) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(22) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[22]/a/label", "xpath:idRelative"],
+        ["xpath=//li[22]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'November 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32afb0c4-1e68-41e4-807a-989ce20bd8c0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(22) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(22) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[22]/a/label", "xpath:idRelative"],
+        ["xpath=//li[22]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'November 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11bc871d-c449-4956-b60a-871757869c39",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ao-serp-filters-departure-date__item:nth-child(22) .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-departure-date__item:nth-child(22) .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[3]/div/ul/li[22]/a/label", "xpath:idRelative"],
+        ["xpath=//li[22]/a/label", "xpath:position"],
+        ["xpath=//label[contains(.,'November 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01710367-6c23-4505-b4e5-deeb40859392",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-group-type__item:nth-child(1) > .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-group-type__item:nth-child(1) > .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[4]/div/ul/li/label", "xpath:idRelative"],
+        ["xpath=//li/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Group')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ccf3dc5-d900-42a1-b0d8-28b9606ae237",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-group-type__item:nth-child(4) > .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-group-type__item:nth-child(4) > .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[4]/div/ul/li[4]/label", "xpath:idRelative"],
+        ["xpath=//li[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Independent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e2c180f-93c2-42af-be38-09ded6d61505",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-group-type__item:nth-child(2) > .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-group-type__item:nth-child(2) > .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[4]/div/ul/li[2]/label", "xpath:idRelative"],
+        ["xpath=//li[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Private')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e7680ed-7ecc-4197-8f70-d4fb379733c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-guide-type__item:nth-child(1) > .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-guide-type__item:nth-child(1) > .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[5]/div/ul/li/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/ul/li/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Fully Guided')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b63329b8-4fad-42c0-a4b3-05a8f3517121",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-guide-type__item:nth-child(3)",
+      "targets": [
+        ["css=.ao-serp-filters-guide-type__item:nth-child(3)", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[5]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/ul/li[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d7e8baa-ca9c-492c-b102-d11205d64fe3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-serp-filters-guide-type__item:nth-child(2) > .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.ao-serp-filters-guide-type__item:nth-child(2) > .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[5]/div/ul/li[2]/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/ul/li[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Self-Guided')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbeb2331-92fa-4b74-8390-f38f6ecf8dc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > li:nth-child(4) > span",
+      "targets": [
+        ["css=ul:nth-child(1) > li:nth-child(4) > span", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[6]/div/ul/li[4]/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/ul/li[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'50 +')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbe2b486-d6ba-48d5-9ba1-d834532cf2f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-age-filter-families__dropdown",
+      "targets": [
+        ["css=.js-age-filter-families__dropdown", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[6]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d57901d-f534-4ac2-b93f-91f6c63facc6",
+      "comment": "",
+      "command": "select",
+      "target": "css=.js-age-filter-families__dropdown",
+      "targets": [],
+      "value": "label=6 years old"
+    }, {
+      "id": "9cf3eee7-6e06-4dd9-84da-1c3ba2a34aa1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-serp-filters-checkbox:nth-child(2) > .ao-serp-filters-checkbox__label",
+      "targets": [
+        ["css=.js-serp-filters-checkbox:nth-child(2) > .ao-serp-filters-checkbox__label", "css:finder"],
+        ["xpath=//aside[@id='params']/div[4]/div[8]/div/ul/li[2]/label", "xpath:idRelative"],
+        ["xpath=//div[8]/div/ul/li[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Bicycle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ac29f698-8c7d-4f14-a0fa-fa0f696f7333",
+    "name": "search+clearing",
+    "commands": [{
+      "id": "7d58a9a5-85e0-475b-9cf9-a289b2e37dc9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e448617-4ce2-4844-8334-a1fa0085f7a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1792x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "087c2bfb-bb03-41f1-8835-d12a277af776",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Destinations",
+      "targets": [
+        ["linkText=Destinations", "linkText"],
+        ["css=.hover > .ao-header-navigation__item-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Destinations')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Destinations')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1c339c8-38f8-4d13-aac3-d24f8a27e33b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Australia",
+      "targets": [
+        ["linkText=Australia", "linkText"],
+        ["css=.ao-header-navigation__dropdown-item:nth-child(3) .ao-header-navigation__dropdown-submenu-item:nth-child(1) > .js-header-destination__link-anchor", "css:finder"],
+        ["xpath=//a[contains(text(),'Australia')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/d/australia')])[2]", "xpath:href"],
+        ["xpath=//li[3]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00a3cec0-16c1-48f9-9162-77f0cdd00147",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-clp-title-with-search__title-text",
+      "targets": [
+        ["css=.ao-clp-title-with-search__title-text", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Australia Tours & Trips')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec39eafe-3ae1-40fd-ad18-21191a41ee5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-clp-title-with-search__title-text",
+      "targets": [
+        ["css=.ao-clp-title-with-search__title-text", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Australia Tours & Trips')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa4f62a1-4975-4b0b-864a-007a1c2d8d34",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.ao-clp-title-with-search__title-text",
+      "targets": [
+        ["css=.ao-clp-title-with-search__title-text", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Australia Tours & Trips')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e9295e3-9968-4e6c-9cb2-e4e8209cccae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-clp-title-with-search__title-text",
+      "targets": [
+        ["css=.ao-clp-title-with-search__title-text", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Australia Tours & Trips')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9580e267-3aaa-409d-932c-af3dde023335",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "css=.ao-clp-title-with-search__title-text",
+      "targets": [
+        ["css=.ao-clp-title-with-search__title-text", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Australia Tours & Trips')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1209c179-bb5c-446a-a345-5bb0421f5c7c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,108)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1caa95c0-cf77-4244-b73e-ca39cb73468a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Places to See",
+      "targets": [
+        ["linkText=Places to See", "linkText"],
+        ["css=.js-ao-clp-menu__menu-item:nth-child(2) > .ao-clp-menu__menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Places to See')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#places-to-see')]", "xpath:href"],
+        ["xpath=//section[2]/div/div/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Places to See')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f102b256-f8b7-46a2-907b-4b35ec68e638",
+      "comment": "",
+      "command": "verifySelectedLabel",
+      "target": "linkText=Places to See",
+      "targets": [],
+      "value": "Places to See"
+    }, {
+      "id": "be2e2d52-aee9-4bed-9ba8-a6cbbd91999f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-clp-title-with-search__when-label",
+      "targets": [
+        ["css=.ao-clp-title-with-search__when-label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Departure Date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a84b111-34f0-4555-a8ee-59f70cf2767d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.am-month-selector__month:nth-child(2) > .aa-btn",
+      "targets": [
+        ["css=.am-month-selector__month:nth-child(2) > .aa-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Feb')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a1b9fb1-c806-445f-b7b8-f1691ac2ff6b",
+      "comment": "",
+      "command": "type",
+      "target": "id=ao-clp-title-with-search__when-input",
+      "targets": [
+        ["id=ao-clp-title-with-search__when-input", "id"],
+        ["name=when", "name"],
+        ["css=#ao-clp-title-with-search__when-input", "css:finder"],
+        ["xpath=//input[@id='ao-clp-title-with-search__when-input']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Feb 2023"
+    }, {
+      "id": "506d82e3-e082-4574-b554-d418879348a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aa-btn--primary-cta",
+      "targets": [
+        ["css=.aa-btn--primary-cta", "css:finder"],
+        ["xpath=(//button[@type='button'])[39]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bf1d20f-6a04-4db6-81e2-9fe0d6e3c6ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clear all",
+      "targets": [
+        ["linkText=Clear all", "linkText"],
+        ["css=.js-serp-parameters__clear-all", "css:finder"],
+        ["xpath=//a[contains(text(),'Clear all')]", "xpath:link"],
+        ["xpath=//aside[@id='params']/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[35]", "xpath:href"],
+        ["xpath=//aside/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clear all')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "519c1138-b1a9-485c-afec-d6084d3b3be8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,91)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca103cd5-2f1f-4d27-8959-cabe847fcb81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tour:nth-child(1) .sbtn",
+      "targets": [
+        ["css=.tour:nth-child(1) .sbtn", "css:finder"],
+        ["xpath=//div[2]/div/ul/li/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7017e443-c60f-43b3-940e-1b9bb387d7ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mfp-close",
+      "targets": [
+        ["css=.mfp-close", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='login_popup']/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "654ec547-11fb-4834-b5a8-20b0fbe0eea1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View tour",
+      "targets": [
+        ["linkText=View tour", "linkText"],
+        ["css=.tour:nth-child(1) .aa-btn--primary", "css:finder"],
+        ["xpath=//a[contains(text(),'View tour')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/t/19089')])[4]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View tour')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1268",
+      "windowTimeout": 2000
+    }, {
+      "id": "a92aa9b0-d19b-4e32-8103-1349bde16328",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1268}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b192edc2-4198-452c-8bfe-7765c744c4f4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ao-tour-hero-image__arrow-button--right",
+      "targets": [
+        ["css=.ao-tour-hero-image__arrow-button--right", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d7914e6-83eb-4193-8b63-05013a8f4c59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ao-tour-hero-image__arrow-button--right",
+      "targets": [
+        ["css=.ao-tour-hero-image__arrow-button--right", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93dd8358-d3bf-4536-859d-4348f0c23ece",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-tour-hero-image__arrow-button--right",
+      "targets": [
+        ["css=.ao-tour-hero-image__arrow-button--right", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26ed8f5b-70ee-41f1-9189-15acb8a03916",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-tour-hero-image__arrow-button--right",
+      "targets": [
+        ["css=.ao-tour-hero-image__arrow-button--right", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56fcecad-f519-43b6-8bd1-c3bf62640c5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-tour-hero-image__arrow-button--right",
+      "targets": [
+        ["css=.ao-tour-hero-image__arrow-button--right", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53b54653-5191-4533-ab56-6495e72ccc75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ao-tour-hero-image__arrow-button--right",
+      "targets": [
+        ["css=.ao-tour-hero-image__arrow-button--right", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section/div/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77bd69ca-9aa6-483d-a038-cb041cc19f59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ex",
+      "targets": [
+        ["css=.ex", "css:finder"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82ef7fd8-ddac-403e-9f90-93625a8c8d82",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c:nth-child(4)",
+      "targets": [
+        ["css=.c:nth-child(4)", "css:finder"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5cf82e5-21c5-4f5e-91f2-4ccc44e2078d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.itn--first > .det__arrow",
+      "targets": [
+        ["css=.itn--first > .det__arrow", "css:finder"],
+        ["xpath=//li/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f03c0aaa-f647-4798-9315-d5f10169993c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.det > .initiated:nth-child(1)",
+      "targets": [
+        ["css=.det > .initiated:nth-child(1)", "css:finder"],
+        ["xpath=//ol[2]/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ea70b1a-9fdd-4eef-a9a0-e89e628eb917",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ex",
+      "targets": [
+        ["css=.ex", "css:finder"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c7b3214-ab27-4e1d-840b-d94f736438fc",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.c:nth-child(4)",
+      "targets": [
+        ["css=.c:nth-child(4)", "css:finder"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": "772.5,1265"
+    }, {
+      "id": "958d5c0d-1494-461b-80d0-22f7c03a0527",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.aa-tour-itinerary__text",
+      "targets": [
+        ["css=.aa-tour-itinerary__text", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": "651.5,86.8125"
+    }, {
+      "id": "4100b605-e277-453c-8baf-b174af5072fc",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.aa-tour-itinerary__text",
+      "targets": [
+        ["css=.aa-tour-itinerary__text", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": "651.5,86.8125"
+    }, {
+      "id": "44f538e6-6805-41bc-8e57-9b737ef39de4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c:nth-child(4)",
+      "targets": [
+        ["css=.c:nth-child(4)", "css:finder"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5b65080-a70a-4c22-a937-c39d77916805",
+      "comment": "",
+      "command": "click",
+      "target": "css=.c:nth-child(4)",
+      "targets": [
+        ["css=.c:nth-child(4)", "css:finder"],
+        ["xpath=//main/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e59b933-5113-443e-8c09-84681a1849df",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ex",
+      "targets": [
+        ["css=.ex", "css:finder"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "006df8fd-7d89-42ce-b495-250226ea6275",
+      "comment": "",
+      "command": "click",
+      "target": "css=.det > .initiated:nth-child(1)",
+      "targets": [
+        ["css=.det > .initiated:nth-child(1)", "css:finder"],
+        ["xpath=//ol[2]/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d99af56-bdcf-4715-a094-dc6c23f8cbcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.initiated:nth-child(2)",
+      "targets": [
+        ["css=.initiated:nth-child(2)", "css:finder"],
+        ["xpath=//ol[2]/li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "48a3927e-bd25-4d60-ac0c-3c6550308a20",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0101082d-9a49-43ae-a7df-3128128ca4b0"]
+  }],
+  "urls": ["https://www.tourradar.com/"],
+  "plugins": []
+}
