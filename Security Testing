@@ -1,0 +1,19 @@
+Security Testing
+
+https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+
+This topic is more for the Software Architect and developers. To be honest I was not involved that much in this topic. 
+Developers should know what cors, cross site scripting and CSRF is and how to prevent it. 
+
+The cheat sheet provided above is very good example how CSRF validation errors in the logs need to be handled.
+
+I know that one approach we used in the project was do not handle token via Cookie. 
+So we made a concept where we restructured the whole CSRF handling:
+	- Secured CSRF Validation Logic with Feature Flag (Recommended to minimize issues in the early phase)
+	- Exclude Server2Server API's like Payment providers (mostly used in cronjobs)
+	- Removed CSRF Cookie
+	- Deliver CSRF-Token via personalize Request and put it in a global object
+	- Add CSRF-Token to each AJAX Call via e.g. prefilter
+		Verified that the token only gets added for requests to our web application and POST/PUT/... Requests
+
+As I mentioned, this topic is huge and highly skilled devs or Software Architects need to be involved to check which approach to follow. 
