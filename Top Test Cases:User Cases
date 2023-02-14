@@ -1,0 +1,62 @@
+Top Test Cases/Use Cases
+
+1. Full checkout process (happy path)
+	This would include:
+		- Trip selection
+		- Availability check
+		- Dates confirmation
+		- Adding Payment method (CC, Paypal and etc..)
+		- Booking
+
+*Test case mentioned above with Logged in user and New User
+*Using this method Happy flow can be easily changed to the edge case test cases by adding fake CC, or Paypal accounts and etc.   
+
+2. Search functionality
+	This would include:
+		- Search by keywords 
+			Country, Objects
+		- TypeAhead function
+			suggestions by typing words 
+
+*Test cases mentioned above needs to be tested in mobile version (the most popular actual devices would be awesome, but simulators, emulators, browserstack or Lambdatest tool works also) as well on desktop  
+
+3. Confirmation email
+	This would take part of the Test Case Nr.1 (Full checkout process):
+		- Confirmation email should be sent and received by user
+		- Confirmation email should contain all necessary data (booking details) needed for traveler
+
+4. UX on mobile device version (including mobile app)
+	This would include:
+		- Buttons positioning
+		- Performance/Loading times
+		- Scrolling
+		- Swiping
+		- Stress testing
+		- Slow connection testing/wifi interruption
+		- ...
+		- Mobile devices/browsers support (compatibility testing)
+
+*Performance/Load Testing is very important and needs to be taken into consideration after every feature which might have impact on that. In the long run it could cost timeouts/crashes which would have impact to the revenue loss. 
+
+
+5. Sort & Filter testing
+	This would include:
+	- Existing filters and sorting options check 
+		Based on the data, you can check the most important once 
+	- Clearance function 	
+
+
+6. Promotions testing (in this case Valentines day special up to 50% OFF)
+	This would include:
+		- The timer check (comparison CMS vs. what it shows in FE)
+		- Banner positioning/color and font of the text
+		- Promotion banner functionality 
+			Clickable/or not
+			Only promoted Deals showed
+
+
+Brief explanation
+What you see above there are not actually Test Cases, i would call the them more Use Cases. 
+I chose to write Use Cases, because I think it's more sufficient for more to explain the Testing Strategy for you in this way. If you really would like to see Test Case with all required components like e.g. TC ID, Title, Short Description, Steps to Reproduce, Expected Behavior, then we can do so in the next session, but not sure if that makes a lot of sense do this now. 
+First of all, to describe proper Test Case would be nice to have Test Case Management tool - e.g. TestRail, where you can create sections, suits and even automate them. It would be easy to manage, understand, maintain and integrate with other tools like Jira (issue tracking and project management system). Having TCM tool would increase efficiency and effectiveness same time engage people to take care what they are doing. For QAs that's definitely a God, for developers new opportunity to have Test Cases automated. 
+
